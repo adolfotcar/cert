@@ -1,0 +1,4 @@
+<p>{{ question().question }}</p>
+@for(answer of shuffleArray(); track question().incorrect_answers){
+    <button (click)="selectedAnswer=answer">{{ answer }}</button>
+}
